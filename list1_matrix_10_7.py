@@ -91,3 +91,27 @@ print(sum)  # 126
 # 40 + 50 + 30  Diagonal Sum
 # Spiral print
 # Snake Print
+
+
+list1 = [[10,20,40],
+         [90,50,60],
+         [30,20,66]]
+
+
+for row in range(len(list1)):
+    if row % 2 == 0:
+        for col in range(len(list1[row])):
+            print(list1[row][col])
+    else:
+        for col in range(len(list1[row])-1 , -1, -1):
+            print(list1[row][col])
+
+
+for row in range(len(list1)):
+   for col in range(len(list1[row])):
+       if list1[row][col] == 40:
+           pass
+        #    print(row,col)
+            # print(list1[row].index(list1[row][col]))
+
+
