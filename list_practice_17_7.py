@@ -51,6 +51,8 @@ for i in l1:
 list1 = [2,2,4,5,6,2,3,4,9,9,1,4,2,3,2]
 
 
+# mithil = list1.index(2,1)
+
 # Index display 
 # 2 ---> 0,1,5,...
 # 4 ---> 2 ...
@@ -59,15 +61,21 @@ list1 = [2,2,4,5,6,2,3,4,9,9,1,4,2,3,2]
 
 # {2:[0,1,5...], 4 : [2...], }
 
-# l4 = []
-# l1 = [1,2,3,4,5]
-# tup1 = (3,1)
-# c = 0
-# for j in l1:
-#     for i in tup1:
-#         l4.append(i)
-#         c+=1
-# print(c)
-# print(l4)
+l4 = []
+l1 = [1,2,3,4,5]
+tup1 = (3,1)
+c = 0
+for j in l1:
+    for i in tup1:
+        l4.append(i)
+        c+=1
+print(c)
+print(l4)
+
+
+
+
+list1 = [(), (), (), ]
+
 
 
