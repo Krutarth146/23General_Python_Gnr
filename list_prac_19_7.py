@@ -48,3 +48,14 @@ for x in list4:
         dict1[x] += 1
 
 print(dict1)   # {'M': 1, 'i': 4, 's': 4, 'p': 2}
+
+
+
+# 38. Write a Python program to sort the numbers in a given list by the sum of their digits.
+# Input: [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+# Output:
+# [10, 11, 20, 12, 13, 14, 15, 16, 17, 18, 19]
+# Input: [23, 2, 9, 34, 8, 9, 10, 74]--> 5,2,9,7,8,9,1,11
+# Output:
+# [10, 2, 23, 34, 8, 9, 9, 74]
+
