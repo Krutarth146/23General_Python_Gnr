@@ -1,35 +1,36 @@
-# l1 = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+l1 = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 
-# l2 = []
-
-
-# for num in l1:
-#     sum = 0
-#     for i in range(len(str(num))): 
-#         sum += num % 10
-#         num //= 10
-#     l2.append(sum)
+l2 = []
 
 
-# res = []
+for num in l1:
+    sum = 0
+    for i in range(len(str(num))): 
+        sum += num % 10
+        num //= 10
+    l2.append(sum)
 
-# for i in zip(l1,l2):
-#     res.append(i)
 
-# print(res)   # [(10, 1), (11, 2), (12, 3), (13, 4), (14, 5), (15, 6), (16, 7), (17, 8), (18, 9), (19, 10), (20, 2)]
+res = []
 
-# def ele(subtup):
-#     return subtup[-1]
+for i in zip(l1,l2):
+    res.append(i)
+
+print(res)   # [(10, 1), (11, 2), (12, 3), (13, 4), (14, 5), (15, 6), (16, 7), (17, 8), (18, 9), (19, 10), (20, 2)]
+
+def ele(subtup):
+    return subtup[-1]
 
 # res.sort(key = lambda x : x[-1])
+res.sort(key = ele)
 
-# print(res)  # [(10, 1), (11, 2), (20, 2), (12, 3), (13, 4), (14, 5), (15, 6), (16, 7), (17, 8), (18, 9), (19, 10)]
+print(res)  # [(10, 1), (11, 2), (20, 2), (12, 3), (13, 4), (14, 5), (15, 6), (16, 7), (17, 8), (18, 9), (19, 10)]
 
-# final_ans = []
-# for i in res:
-#     final_ans.append(i[0])
+final_ans = []
+for i in res:
+    final_ans.append(i[0])
 
-# print(final_ans)   # [10, 11, 20, 12, 13, 14, 15, 16, 17, 18, 19]
+print(final_ans)   # [10, 11, 20, 12, 13, 14, 15, 16, 17, 18, 19]
 
 
 # --------------------------
