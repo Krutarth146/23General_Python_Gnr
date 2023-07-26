@@ -54,18 +54,18 @@ for num in list4:
     copy = num
 
     if num > 0:
-        for j in range(len(str(copy))):
-            sum += num % 10
-            num //= 10
+        res.append(num)
     
     elif num < 0:
         x = str(copy)
-        for j in range(1, len(str(copy))):
+        for j in range(1, len(str(copy))):   # -6
             if j == 1:
-                sum = sum - int(x[j])
+                sum = sum - int(x[j])  # x[1]
 
             else:
                 sum += int(x[j])
+
+
 
     num = copy
 
