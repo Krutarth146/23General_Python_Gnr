@@ -88,6 +88,8 @@ arin1 = map(square, list1)
 print(arin1)   # <map object at 0x00000212E6E37C70>
 print(type(arin1))   # <class 'map'>
 
+
+
 arin1 = list(map(square, list1))
 arin1 = list(map(lambda num : num ** 2, list1))
 print(arin1)   # [100, 89401, 1024, 1936, 441, 334084, 7921]

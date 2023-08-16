@@ -116,7 +116,7 @@ print(x.__next__())
 
 def fun2(f4):
     print("This is fun2 FUnction")
-    f4()
+    f4()   # akshat()
 
 def akshat():
     print("Akshat Function")
