@@ -90,3 +90,6 @@ def twoArrays(k, A, B):
     
 
 print(twoArrays(k,A,B))
+
+
+
