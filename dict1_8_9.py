@@ -93,3 +93,82 @@ for key,val in test_dict.items():
         new_dict[key] = val
 
 print(new_dict)   # {'Gfg': 3, 'for': 6, 'geeks': 'CS'}
+
+
+
+# num_freq = [[10,5], [5, 4], [3,2], [11,1]]
+
+
+# for i in range(len(num_freq)) :   # 4  ---> 0 to 3   # i = 0
+        
+#             val = num_freq[i][1]
+#             if val % 2 == 0 :
+#                 no_of_painrs = no_of_painrs + 1
+
+
+
+# # 10 --> Counter
+
+# dict1 = {}
+
+
+# if ele not in dict1:
+#     dict1[ele] = 1
+# else:
+#      dict1[ele] += 1
+
+dict1 =  {10 : 5, 20 : 4}
+
+for i in dict1:
+    print(dict1[i])
+
+
+for k,v in dict1.items():
+    print(v)
+
+# ----------------------------------------------------------
+
+dict2 = {'Name' : "Krutarth", 'gender' : "Male", 'School' : "HBK"}
+
+keys_list = [i for i in dict2.keys()]
+print(keys_list)
+print(type(keys_list))
+
+
+keys_list.sort()
+
+print(keys_list,' ----')   # ['Name', 'School', 'gender']  ----
+
+new_dict = {}
+
+for i in keys_list:
+    new_dict.update({i:dict2[i]})
+
+print(new_dict)
+
+
+for j in sorted(dict2.items()):
+    print(j)
+
+from collections import OrderedDict
+
+dict2 = OrderedDict(dict2)
+print(dict2)
+
+x,y,z = [10,20,90]
+
+print(x,y)
+
+
+# Anagram
+
+s = "state"
+t = "taste"
+
+dict1  = {}
+dict2 = {}
+
+for i in set(s):
+    dict1[i] = s.count(i)
+
+print(dict1)   # {'a': 1, 't': 2, 's': 1, 'e': 1}
