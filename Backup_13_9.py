@@ -1,27 +1,27 @@
-# Operators: 
+# # Operators: 
 
-# 1. Arithmetic   + - * / // % **
+# # 1. Arithmetic   + - * / // % **
 
-num1 = 25
-num2 = 2
-print(f'{num1} / {num2} = {num1 / num2}')   # 25 / 2 = 12.5
-print(f'{num1} // {num2} = {num1 // num2}')   # 25 // 2 = 12
-print(f'{num1} % {num2} = {num1 % num2}')   # 25 % 2 = 1
+# num1 = 25
+# num2 = 2
+# print(f'{num1} / {num2} = {num1 / num2}')   # 25 / 2 = 12.5
+# print(f'{num1} // {num2} = {num1 // num2}')   # 25 // 2 = 12
+# print(f'{num1} % {num2} = {num1 % num2}')   # 25 % 2 = 1
 
 
-# Assignment Operator  = += -= *= /= //= %= <<= >>+ ^= |= &= (Lowest Priority)
+# # Assignment Operator  = += -= *= /= //= %= <<= >>+ ^= |= &= (Lowest Priority)
 
-x = 90
+# x = 90
 
-x += 10   # x = x + 10  # 100
-x += 300   # 400
-x /= 3     # 133.3333333333
-x += 900   # 1033.333333
-x %= 5     # 3.3
-x -= 1     # 2.
+# x += 10   # x = x + 10  # 100
+# x += 300   # 400
+# x /= 3     # 133.3333333333
+# x += 900   # 1033.333333
+# x %= 5     # 3.3
+# x -= 1     # 2.
 
-print(x + 50)   # 52.33333333333326
-print(x)       # 2.3333333333332575
+# print(x + 50)   # 52.33333333333326
+# print(x)       # 2.3333333333332575
 
 # & - Bitwise
 # and - Logical
@@ -42,9 +42,9 @@ print(x)       # 2.3333333333332575
 # print(list1)
 
 
-str1 = '{"w":45,"r":21}'
-# Method - 2
-# list2 = list(map(str, input().split()))
+
+# # Method - 2
+# # list2 = list(map(str, input().split()))
 # print(list2)
 list1 =['1','2','3','4','5','(4,5)',"u",'{"w":45,"r":21}','5']
 new1= []
@@ -60,47 +60,52 @@ for i in list1:
     elif i[0] == '(' and i[-1] == ')':
         print(i)
         str3 = i[1:-1]
-        print("str3 = ",str3)
         l1 = []
         for k in str3:
             if ord(k) >= 48 and ord(k) <= 57:
                 l1.append(int(k))
         print('Tuple is: ',tuple(l1))
         new1.append(tuple(l1))
-    elif i[0] == '{' and i[-1] == '}':
-        if ':' in i:
-            print('Dict is')
-            str3 = i[1:-1]
-            print('str3',str3)   # "w":45,"r":21
-            
-            dict3 = {}
-            val = ''
-            for p in range(len(str3)-2):
+    
 
-                temp = ''
-                if str3[p+2] == ':':
-                    print('str3[p] = ',str3[p])
-                    temp += str3[1:p+1]
+        # ----------------------------------------------------
+    elif i[0] == '{' and i[-1] == '}':   
+        i = i[1:-1]
+        # print(str1)
 
-                    for r in range(p+3,len(str3)-1):
-                        if str3[r+1] == ',':
-                            val+=str3[p+3 : r+1]
-                            # print(str3[p+3])
-                            break
-                    dict3[temp] = int(val)   
-                print('dict3',dict3)                 
-                print(str3)
-                if p == len(str3)-1:
+        list1 = list(i)
 
-                        break
+      
+        new = []
+        for i in list1:
+            if i != '"':
+                new.append(i)
 
-            print('temp',temp)
-            print('str3', str3)
+        temp = []
+        dict1 = {}
+        str1 = ''
+        for i in range(len(new)):
+            if new[i] == ',':
+                for c in temp[2:]:
+                    str1 += c
+                dict1[temp[0]] = int(str1)
+                temp = []
+                str1 = ''
+                
+                pass
+            elif i == len(new) - 1:
+                temp.append(new[i])
+                for c in temp[2:]:
+                    str1 += c
+                dict1[temp[0]] = int(str1)
 
-            
+            else:
+                temp.append(new[i])
 
+        D_key = [i for i in dict1]
+        D_val = [i for i in dict1.values()]
+        print('Dict Key', D_key)
+        print('Dict Val', D_val)
 
-
-        else:
-            print('Set')
-print(new1)
+    else:
+        print('Set')
