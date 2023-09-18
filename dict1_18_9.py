@@ -49,23 +49,21 @@ for sublist in range(len(l2)):
 
 # Recursion  ----> Func
 
-# def Mithil(num):
-#     print(num,end=' ')  # 1
-#     if num == 100:
-#         return
+def Mithil(num):
+    if num == 100:
+        return 100
+    print(num,end=' ')  # 1
     
-    
-    
-#     Mithil(num + 1)  # Mithil(2)
+    return Mithil(num + 1)  # Mithil(2)
 
 
-# Mithil(1)
+print(Mithil(1))
 
 
-def factorial(num):
-    if num == 1:
-        return 1
+# def factorial(num):
+#     if num == 1:
+#         return 1
 
-    return num * factorial(num-1)   # 5 * 4 * 3 * 2 
+#     return num * factorial(num-1)   # 5 * 4 * 3 * 2 
 
-print(factorial(5))   # 120
+# print(factorial(5))   # 120
