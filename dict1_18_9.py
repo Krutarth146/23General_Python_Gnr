@@ -39,6 +39,13 @@ for dict22 in list1:
 
 print(l2)
 
+# print(dict(l2))
+
+unique = []
+for i in range(len(l2)):
+    unique.append(l2[i][0])
+
+print(unique)
 #  unique
 
 for sublist in range(len(l2)):
@@ -49,15 +56,17 @@ for sublist in range(len(l2)):
 
 # Recursion  ----> Func
 
-def Mithil(num):
-    if num == 100:
-        return 100
-    print(num,end=' ')  # 1
+
+# def Mithil(num):
+#     if num == 100:
+#         return 100
     
-    return Mithil(num + 1)  # Mithil(2)
+#     print(num,end=' ')  # 1
+    
+#     return Mithil(num + 1)  # Mithil(2)
 
 
-print(Mithil(1))
+# print(Mithil(1))
 
 
 # def factorial(num):
