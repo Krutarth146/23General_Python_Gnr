@@ -56,3 +56,53 @@ ans = {'a' : 3, 'u' : 2}
 
 def Problem(str1):
     pass
+
+
+s2 = 'kyoto'
+s1 = 'tokyo'
+
+
+dict1 = {}
+
+dict2 = {}
+
+for i in s1:
+    dict1[i] = s1.count(i)
+for i in s2:
+    dict2[i] = s2.count(i)
+
+print(dict1,dict2)
+
+if dict1 == dict2:
+    print('True')
+
+
+
+str1 = "amanpatel"
+str2 = 'codeforces'
+
+list1 = []
+for i in range(len(str2)+1):
+    for j in range(i+1,len(str2)+1):
+        list1.append(str2[i:j])
+    # break
+list1 = list(set(list1))
+
+list2 = []
+for i in range(len(str1)+1):
+    for j in range(i+1,len(str1)+1):
+        list2.append(str1[i:j])
+
+print(list1)
+print(list2)
+
+list3 = []
+for x in list1:
+    for k in list2:
+        if x == k:
+            list3.append(x)
+
+s1 = max(list3,key = len)
+print(s1)
+ans = len(str2) - len(s1) 
+print(ans)
