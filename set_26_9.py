@@ -48,3 +48,5 @@ import array as arr
 # a1 = arr.array('i', [10,20,30,40,])
 a1 = arr.array('u', ['b','x','z','w'])
 print(a1)    # array('i', [10, 20, 30, 40])
+
+
