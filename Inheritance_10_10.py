@@ -50,8 +50,8 @@ class Innova(Alto):
 
     def __init__(self, owner_name):
         # super().__init__("Bansi")
-        super().__init__(owner_name)
         print('Innova Constructor Called')
+        super().__init__(owner_name)
 
 
     def Airbags(self, total_bags):
