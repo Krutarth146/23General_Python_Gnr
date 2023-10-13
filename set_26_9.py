@@ -43,6 +43,7 @@ print(list1)
 
 # Array
 
+# from array import array as arr
 import array as arr
 
 # a1 = arr.array('i', [10,20,30,40,])
