@@ -1,4 +1,3 @@
-import array as arr
 class Bank:
     def __init__(self, name1 = None, year = None):
         self.name = name1
@@ -21,13 +20,13 @@ class Bank:
     
     @staticmethod
     def Example():
-        a1 = arr.array('i', [10,20,30,40,])
-        print(a1) 
-        list1 = [56,90,34,23]
-        a1.fromlist(list1)
-        print(a1) 
-        a1[0] = 900
-        print(a1)    # array('i', [900, 20, 30, 40, 56, 90, 34, 23])
+        # a1 = arr.array('i', [10,20,30,40,])
+        # print(a1) 
+        # list1 = [56,90,34,23]
+        # a1.fromlist(list1)
+        # print(a1) 
+        # a1[0] = 900
+        # print(a1)    # array('i', [900, 20, 30, 40, 56, 90, 34, 23])
 
         print(type(a1))   # <class 'array.array'>
 
@@ -69,34 +68,22 @@ class Person(Bank, Zerodha):   # MRO
         sb = Zerodha()
         sb.Cricket()
 
-# def CreatAccount1():
-#     '''This is Person Class which is inherited from Bank & Zerodha'''
-#     pass
-
-# arin = Bank()
-
-# arin.setAccount('Arin', 2001)
-# print(arin.printName()[:])   # ('Arin', 2001)
-# Bank.Example()
+    def Cricket(self):
+        Zerodha().Cricket()
+        Bank().Cricket()
 
 
-# mithil = Person()   # Bank Con. Called
-# # mithil.Deposit()
+harsh = Person()
 
-# mithil.setAccount('Mithil', 90)
-# print(mithil.printName())
-# mithil.printer()
+harsh.Cricket()   # Bank Cricket
 
-# print(CreatAccount1.__doc__)   # This is Person Class which is inherited from Bank & Zerodha
+list1 = [Bank(), Zerodha()]
 
-# p1 = [Bank(), Zerodha()]
-# p1[1].Cricket()
+# Bank.Cricket()   # Class Method
+# Bank().Cricket()
 
-# # for obj in p1:
-# #     obj.Cricket()
+# print(list1)   # [<__main__.Bank object at 0x0000023D396D7CA0>, <__main__.Zerodha object at 0x0000023D396D7C40>]
+# for k in list1:
+#     k.Cricket()
 
-# mithil.Tr()
-# mithil.CreatAccount()
-
-
-# Hirarchical, Hybrid (Diamond Problem), Task
+harsh.Cricket()
