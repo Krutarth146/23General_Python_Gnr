@@ -6,7 +6,7 @@ class RBI():
 class Kotak(RBI):
 
 
-    def repoRate(self,rs,name):
+    def repoRate(self,rs,name):   # Whereas method overriding is a example of run time polymorphism.
         super().repoRate(4)
         self.reporate = 9.0
         print('Kotak reporate Unchanged',self.reporate, rs, name)
@@ -14,7 +14,7 @@ class Kotak(RBI):
     def InterestRate(self):
         print(4)
 
-    def InterestRate(self, rate):
+    def InterestRate(self, rate):   # Method Overloading is Not Supported  # 	Method overloading is a example of compile time polymorphism.
          print(rate)
 
 

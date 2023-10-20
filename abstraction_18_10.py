@@ -32,6 +32,10 @@ class RBI(ABC):
 
 
 class Kotak(RBI):
+    def __init__(self, num1=None, num2 = None):
+        self.num1 = num1
+        self.num2 = num2
+
     def After4(self):
         print("Kotak Bank Nasta")
 
