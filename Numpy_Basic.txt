@@ -1,0 +1,175 @@
+1. Write a Numpy program to get the Numpy version and show the Numpy build configuration.
+ 
+
+2. Write a NumPy program to get help with the add function.
+ 
+
+3. Write a NumPy program to test whether none of the elements of a given array are zero. 
+ 
+
+4. Write a NumPy program to test if any of the elements of a given array are non-zero. 
+ 
+
+5. Write a NumPy program to test a given array element-wise for finiteness (not infinity or not a number).
+ 
+
+6. Write a NumPy program to test elements-wise for positive or negative infinity. 
+ 
+
+7. Write a NumPy program to test element-wise for NaN of a given array.
+ 
+
+8. Write a NumPy program to test element-wise for complex numbers, real numbers in a given array. Also test if a given number is of a scalar type or not. 
+ 
+
+9. Write a NumPy program to test whether two arrays are element-wise equal within a tolerance.
+ 
+
+10. Write a NumPy program to create an element-wise comparison (greater, greater_equal, less and less_equal) of two given arrays.
+ 
+
+11. Write a NumPy program to create an element-wise comparison (equal, equal within a tolerance) of two given arrays.
+ 
+
+12. Write a NumPy program to create an array with the values 1, 7, 13, 105 and determine the size of the memory occupied by the array.
+ 
+
+13. Write a NumPy program to create an array of 10 zeros, 10 ones, and 10 fives. 
+ 
+
+14. Write a NumPy program to create an array of integers from 30 to 70.
+ 
+
+15.Write a NumPy program to create an array of all even integers from 30 to 70.
+ 
+
+16. Write a NumPy program to create a 3x3 identity matrix.
+ 
+
+17. Write a NumPy program to generate a random number between 0 and 1.
+ 
+
+18. Write a NumPy program to generate an array of 15 random numbers from a standard normal distribution.
+ 
+
+19. Write a NumPy program to create a vector with values ranging from 15 to 55 and print all values except the first and last.
+ 
+
+20. Write a NumPy program to create a 3X4 array and iterate over it.
+ 
+
+21. Write a NumPy program to create a vector of length 10 with values evenly distributed between 5 and 50.
+ 
+
+22. Write a NumPy program to create a vector with values from 0 to 20 and change the sign of the numbers in the range from 9 to 15.
+ 
+
+23. Write a NumPy program to create a vector of length 5 filled with arbitrary integers from 0 to 10.
+ 
+
+24. Write a NumPy program to multiply the values of two given vectors.
+ 
+
+25. Write a NumPy program to create a 3x4 matrix filled with values from 10 to 21.
+ 
+
+26. Write a NumPy program to find the number of rows and columns in a given matrix.
+ 
+
+27. Write a NumPy program to create a 3x3 identity matrix, i.e. the diagonal elements are 1, the rest are 0.
+ 
+
+28. Write a NumPy program to create a 10x10 matrix, in which the elements on the borders will be equal to 1, and inside 0.
+ 
+
+29. Write a NumPy program to create a 5x5 zero matrix with elements on the main diagonal equal to 1, 2, 3, 4, 5.
+ 
+
+30. Write a NumPy program to create a 4x4 matrix in which 0 and 1 are staggered, with zeros on the main diagonal.
+ 
+
+31. Write a NumPy program to create a 3x3x3 array filled with arbitrary values.
+ 
+
+32. Write a NumPy program to compute the sum of all elements, the sum of each column and the sum of each row in a given array.
+ 
+
+33. Write a NumPy program to compute the inner product of two given vectors.
+ 
+
+34. Write a NumPy program to add a vector to each row of a given matrix.
+ 
+
+35. Write a NumPy program to save a given array to a binary file .
+ 
+
+36. Write a NumPy program to save a given array to a binary file.
+ 
+
+37. Write a NumPy program to save a given array to a text file and load it.
+ 
+
+38. Write a NumPy program to convert a given array into bytes, and load it as an array.
+ 
+
+39. Write a NumPy program to convert a given list into an array, then again convert it into a list. Check initial list and final list are equal or not.
+ 
+
+40. Write a NumPy program to compute the x and y coordinates for points on a sine curve and plot the points using matplotlib.
+ 
+
+41. Write a NumPy program to convert numpy dtypes to native Python types
+ 
+
+42. Write a NumPy program to add elements to a matrix. If an element in the matrix is 0, we will not add the element below this element.
+ 
+
+43. Write a NumPy program to find missing data in a given array.
+ 
+
+44. Write a NumPy program to check whether two arrays are equal (element wise) or not.
+ 
+
+45. Write a NumPy program to create a one-dimensional array of single, two and three-digit numbers.
+ 
+
+46. Write a NumPy program to create a two-dimensional array of a specified format.
+ 
+
+47. Write a NumPy program to create a one-dimensional array of forty pseudo-randomly generated values. Select random numbers from a uniform distribution between 0 and 1. 
+ 
+
+48. Write a NumPy program to create a two-dimensional array with shape (8,5) of random numbers. Select random numbers from a normal distribution (200,7).
+ 
+
+49. Write a NumPy program to generate a uniform, non-uniform random sample from a given 1-D array with and without replacement.
+ 
+
+50. Write a NumPy program to create a 4x4 array with random values. Create an array from the said array swapping first and last rows.
+ 
+
+51. Write a NumPy program to create a new array of given shape (5,6) and type, filled with zeros.
+ 
+
+52. Write a NumPy program to sort a given array by row and column in ascending order.
+ 
+
+53. Write a NumPy program to extract all numbers from a given array less and greater than a specified number.
+ 
+
+54. Write a NumPy program to replace all numbers in a given array equal, less and greater than a given number.
+ 
+
+55. Write a NumPy program to create an array of equal shape and data type for a given array.
+ 
+
+56. Write a NumPy program to create a three-dimensional array with the shape (3,5,4) and set it to a variable.
+ 
+
+57. Write a NumPy program to create a 4x4 array. Create an array from said array by swapping first and last, second and third columns.
+ 
+
+58. Write a NumPy program to swap rows and columns of a given array in reverse order.
+ 
+
+59. Write a NumPy program to multiply two given arrays of the same size element-by-element.

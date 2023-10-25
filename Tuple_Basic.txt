@@ -1,0 +1,20 @@
+  - program to Find the size of a Tuple
+  – Maximum and Minimum K elements in Tuple
+  - Create a list of tuples from given list having number and its cube in each tuple
+  – Adding Tuple to List and vice – versa
+  – Sum of tuple elements
+  – Modulo of tuple elements
+  – Row-wise element Addition in Tuple Matrix
+  – Update each element in tuple list
+  – Multiply Adjacent elements
+  – Join Tuples if similar initial element
+  – All pair combinations of 2 tuples
+  – Remove Tuples of Length K
+  – Remove Tuples from the List having every element as None
+  - Sort a list of tuples by second Item
+  – Sort Tuples by Total digits
+  – Elements frequency in Tuple
+  – Filter Range Length Tuples
+  – Assign Frequency to Tuples
+  – Records with Value at K index
+  – Test if tuple is distinct

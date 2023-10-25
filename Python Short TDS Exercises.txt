@@ -1,0 +1,22 @@
+Python Tuple Exercises
+Python program to Find the size of a Tuple
+Python – Maximum and Minimum K elements in Tuple
+Python – Sum of tuple elements
+Python – Row-wise element Addition in Tuple Matrix
+Create a list of tuples from given list having number and its cube in each tuple
+
+
+Python Dictionary Exercises
+Python | Sort Python Dictionaries by Key or Value
+Handling missing keys in Python dictionaries
+Python dictionary with keys having multiple inputs
+Python program to find the sum of all items in a dictionary
+Python program to find the size of a Dictionary
+
+
+Python Set Exercises
+Find the size of a Set in Python
+Iterate over a set in Python
+Python – Maximum and Minimum in a Set
+Python – Remove items from Set
+Python – Check if two lists have atleast one element common
