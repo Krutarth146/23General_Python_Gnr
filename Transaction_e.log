@@ -17,3 +17,15 @@
 2023-10-25 18:17:40,165  WARNING Its a Warning
 2023-10-25 18:17:40,165  ERROR Did you try to divide by zero
 2023-10-25 18:17:40,165  CRITICAL Internet is down
+2023-10-25 18:33:28,747  ERROR Uder the 10000
+2023-10-25 18:33:31,068  DEBUG Harmless debug Message
+2023-10-25 18:33:31,068  INFO Just an information
+2023-10-25 18:33:31,069  WARNING Its a Warning
+2023-10-25 18:33:31,069  ERROR Did you try to divide by zero
+2023-10-25 18:33:31,069  CRITICAL Internet is down
+2023-10-25 18:33:45,952  ERROR Uder the 10000
+2023-10-25 18:33:48,644  DEBUG Harmless debug Message
+2023-10-25 18:33:48,644  INFO Just an information
+2023-10-25 18:33:48,646  WARNING Its a Warning
+2023-10-25 18:33:48,646  ERROR Did you try to divide by zero
+2023-10-25 18:33:48,646  CRITICAL Internet is down

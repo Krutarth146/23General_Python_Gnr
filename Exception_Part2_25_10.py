@@ -106,10 +106,10 @@ print(x,y)
 
 
 # importing module
-import logging
+# import logging
  
 # Create and configure logger
-logging.basicConfig(filename="newfile.log",
+logging.basicConfig(filename="newfile1.log",
                     format='%(asctime)s %(message)s',
                     filemode='w')
  
