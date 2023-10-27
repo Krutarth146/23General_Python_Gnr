@@ -83,6 +83,7 @@ def withdraw(amount):
     
     except MinimumBalance:
         logging.error("Uder the 10000")
+        logging.exception("msg")
         print("Pls Follow Rule")
 
 # withdraw(300)

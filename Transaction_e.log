@@ -29,3 +29,21 @@
 2023-10-25 18:33:48,646  WARNING Its a Warning
 2023-10-25 18:33:48,646  ERROR Did you try to divide by zero
 2023-10-25 18:33:48,646  CRITICAL Internet is down
+2023-10-27 17:42:43,588  ERROR Uder the 10000
+2023-10-27 17:42:52,558  ERROR Uder the 10000
+2023-10-27 17:42:52,560  ERROR msg
+Traceback (most recent call last):
+  File "c:\Users\KRUTARTH\OneDrive\Desktop\Krutarth_Study\Python\Gen_Gnr\Exception_Part2_25_10.py", line 75, in withdraw
+    raise MinimumBalance()
+MinimumBalance
+2023-10-27 17:43:05,365  ERROR Uder the 10000
+2023-10-27 17:43:05,366  ERROR msg
+Traceback (most recent call last):
+  File "c:\Users\KRUTARTH\OneDrive\Desktop\Krutarth_Study\Python\Gen_Gnr\Exception_Part2_25_10.py", line 75, in withdraw
+    raise MinimumBalance()
+MinimumBalance
+2023-10-27 17:43:07,332  DEBUG Harmless debug Message
+2023-10-27 17:43:07,332  INFO Just an information
+2023-10-27 17:43:07,332  WARNING Its a Warning
+2023-10-27 17:43:07,332  ERROR Did you try to divide by zero
+2023-10-27 17:43:07,332  CRITICAL Internet is down
