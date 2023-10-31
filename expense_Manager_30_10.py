@@ -17,7 +17,8 @@
 # Expense Management : 
 
 class Customer():
-    def __init__(self):
+    list1 = []   # class Variable
+    def __init__(self):   
         self.name = ""
         self.email = ""
         self.password = ""
@@ -25,15 +26,33 @@ class Customer():
         self.personal = 0
         self.utility = 0
 
-    def sign_up(self):
-        self.name = input("Enter Name: ")
-        self.email = input("Enter Email: ")
-        self.password = input("Enter Password: ")
 
-        if self.email.count('@') == 1 and self.email.count('.') == 1 and self.email.endswith('.') == False:
-            return 1
-        else:
-            return 0
+    def sign_up(self):
+        while True:
+            
+            email_t = input("Enter Email: ")    
+            if email_t.count('@') == 1 and email_t.count('.') == 1 and email_t.endswith('.') == False:
+                if len(Customer.list1) > 0:
+                    flag = 0
+                    for g in Customer.list1:
+                        if g.email == email_t:
+                            print("Email- User iD Already Taken")
+                            print("pls Enter another Eamil and Password.")
+                            flag = 1
+                            break
+                    if flag == 0:
+                        self.name = input("Enter Name: ")
+                        self.email = email_t
+                        self.password = input("Enter Password: ")
+                        return 1
+                else:
+                    self.name = input("Enter Name: ")
+                    self.email = email_t
+                    self.password = input("Enter Password: ")
+                    return 1
+
+            else:
+                return 0
         
 
     def login(self, userid, paswd):
@@ -49,7 +68,6 @@ class Customer():
         self.utility += amount
 
 
-list1 = []
 while True: 
     print("1 ---- Signup")
     print("2 ---- Login")
@@ -61,13 +79,16 @@ while True:
     if choice == 1:
         c = Customer()
         if c.sign_up():
-            list1.append(c)
+            Customer.list1.append(c)   # list1 = [obj1, obj2]
 
     elif choice == 2:
         userid = input("Enter User ID: ")
         passwordd = input("Enter Password: ")
         flag = 0
-        for x in list1:
+        for x in Customer.list1:   #  [obj1, obj2]   # x = obj1
+            # print(x.login(userid, passwordd)[0])
+            # print(x.login(userid, passwordd)[1])
+            # exit()
             if x.login(userid, passwordd):
                 flag = 1
                 while True:
@@ -103,11 +124,11 @@ while True:
             print("Cred. Invalid")
 
     elif choice == 3:   # [obj1, obj2, obj3]
-        for d in list1:
+        for d in Customer.list1:
             print(d.name)
 
     elif choice == 4:
         exit()
 
 
-# Email Duplicatation remove, Password Validation (regex - Regular Expression), Expense Name with Price and total, file (using Json)
+# Password Validation (regex - Regular Expression), Expense Name with Price and total, file (using Json)
