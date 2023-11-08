@@ -21,3 +21,4 @@ class D(B, C):
 
 d1 = D()
 d1.mA()
+

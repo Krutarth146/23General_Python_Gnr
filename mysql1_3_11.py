@@ -32,3 +32,6 @@ cur.execute(query, tup1)
 
 
 mydb.commit()
+
+
+# Create a New Table Primary Key, Not Null
