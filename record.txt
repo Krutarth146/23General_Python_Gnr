@@ -1,0 +1,1 @@
+{"1001": {"pName": "Parleg", "price": 900, "qn": 0}, "1002": {"pName": "Oats", "price": 600, "qn": 32}, "1003": {"pName": "kellogs", "price": 67, "qn": 7}, "1004": {"pName": "Perks", "price": 20, "qn": 700}}
